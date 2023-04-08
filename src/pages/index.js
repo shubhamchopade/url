@@ -11,7 +11,7 @@ export default function Home(props) {
   const [hash, setHash] = useState('');
 
   const [generatedUrl, setGeneratedUrl] = useState('');
-  const pb = new PocketBase(process.env.NEXT_PUBLIC_POCKETBASE_API_KEY);
+  const pb = new PocketBase('https://api-url-shortner.techsapien.dev');
 
   return (
     <div>
